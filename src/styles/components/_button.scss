@@ -1,0 +1,103 @@
+.button--primary {
+  background: $fatigue;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background: darken($fatigue, 10%);
+  }
+}
+
+.button--secondary {
+  background: $apple-green;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background: darken($apple-green, 10%);
+  }
+}
+
+.button--red {
+  background: $vibrant-red;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background: darken($vibrant-red, 10%);
+  }
+}
+
+.button--action {
+  background: transparent;
+  padding: $m-size;
+  justify-content: center;
+  align-items: center;
+  color: $off-black;
+  box-shadow: none;
+  line-height: 0 !important;
+
+  svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+}
+
+.button--icon {
+  width: 185px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  color: #fff;
+
+  span {
+    width: 0;
+    margin-right: $l-size;
+    flex-grow: 1;
+  }
+
+  svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+
+.button--view {
+  @include linearGradient(180deg, $purple-1, $purple-0);
+  @include boxShadow($purple-0);
+  &:hover {
+    @include linearGradient(180deg, darken($purple-1, 5%), darken($purple-0, 5%));
+  }
+}
+
+.button--add {
+  @include linearGradient(180deg, $blue-1, $blue-0);
+  @include boxShadow($blue-0);
+
+  &:hover {
+    @include linearGradient(180deg, darken($blue-1, 5%), darken($blue-0, 5%));
+  }
+}
+
+.button--delete {
+  @include linearGradient(180deg, $red-1, $red-0);
+  @include boxShadow($red-0);
+
+  &:hover {
+    @include linearGradient(180deg, darken($red-1, 5%), darken($red-0, 5%));
+  }
+}
+
+.button--toggle {
+  background: $dark-green;
+  padding: $m-size;
+}
+
+.button--link {
+  text-decoration: none;
+}
+
+.button--block {
+  width: 100%;
+}

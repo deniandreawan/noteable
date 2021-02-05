@@ -1,0 +1,137 @@
+.form-input {
+  width: 70%;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    order: 2;
+  }
+}
+
+.form-thumbnail {
+  width: 30%;
+  padding: $xl-size $m-size;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    order: 1;
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.note-form {
+  width: 100%;
+  display: flex;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    padding-bottom: $xl-size;
+  }
+}
+
+.form-control {
+  margin-top: $m-size;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  input {
+    padding: $m-size;
+    width: 100%;
+    background: #fff;
+    color: $fatigue;
+    border: 1px solid darken($off-grey, 5%);
+    border-radius: 10px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $purple-1;
+    }
+  }
+
+  button {
+    margin-top: $l-size;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid darken($off-grey, 5%);
+    border-radius: 10px;
+    line-height: 2.4rem;
+    color: $fatigue;
+    padding: $m-size;
+    background: #fff;
+    padding-top: $s-size;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $purple-1;
+    }
+
+    &::-webkit-scrollbar {
+      background: $fatigue;
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: lighten($fatigue, 70%);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $fatigue;
+    }
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.input-file {
+  display: none;
+}
+
+.file-label {
+  background: lighten($off-white, 5%);
+  padding: 5px $s-size;
+  border-radius: 10px;
+  font-size: 12px;
+  color: $off-black;
+  text-align: center;
+  margin-top: $s-size;
+
+  &:hover {
+    cursor: pointer;
+    background: $off-white;
+  }
+}
+
+.form-file-chooser {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 120px;
+    height: 60px;
+    object-fit: cover;
+  }
+}
+
+.textarea-wrapper {
+  display: flex;
+  overflow: hidden;
+  height: 196px;
+}

@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  background: #fff;
+  color: $fatigue;
+  line-height: 3.2rem;
+
+  @media (max-width: $tablet) {
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+  }
+}
+
+h1,
+h2 {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+button {
+  padding: $m-size;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,73 @@
+.note-list {
+  margin-top: $xl-size;
+}
+
+.note-item {
+  text-decoration: none;
+}
+
+.note-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $off-white;
+  padding: $s-size 0;
+
+  h4 {
+    flex-grow: 1;
+    color: $dark-green;
+  }
+}
+.note-thumbnail {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: $powder-blue;
+  margin-right: $l-size;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+}
+
+.note-list-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $xl-size;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+}
+
+.header-title {
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.note__empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    font-weight: 800 !important;
+  }
+}
+
+.note-items {
+  text-align: left;
+  vertical-align: middle;
+  word-wrap: break-word;
+  white-space: pre-line;
+
+  @media (max-width: $tablet) {
+    padding: 0;
+  }
+}
