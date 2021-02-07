@@ -5,10 +5,10 @@ import Icon from "react-eva-icons";
 import PropTypes from "prop-types";
 import moment from "moment";
 
-import Modal from "./Modal";
-import thumbBg from "../assets/images/thumbnail.jpg";
 import { history } from "../App";
 import { deleteNote } from "../redux/actions/noteActions";
+import Modal from "./Modal";
+import thumbBg from "../assets/images/thumbnail.jpg";
 
 const NoteItem = ({ note }) => {
   const [isOpenDeleteModal, setOpenDeleteModal] = useState(false);

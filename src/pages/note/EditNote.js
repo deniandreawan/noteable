@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+
 import { editNote } from "../../redux/actions/noteActions";
 import useDocumentTitle from "../../hooks/useDocumentTitle";
 import useDidMount from "../../hooks/useDidMount";

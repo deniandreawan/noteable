@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addNote } from "../../redux/actions/noteActions";
 
+import { addNote } from "../../redux/actions/noteActions";
 import useDocumentTitle from "../../hooks/useDocumentTitle";
 import NoteForm from "../../components/NoteForm";
 

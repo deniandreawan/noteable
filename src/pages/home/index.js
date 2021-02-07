@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
+
 import FilterNote from "../../components/FilterNote";
 import NoteItem from "../../components/NoteItem";
 import filterNote from "../../helpers/filterNote";
-
 import useDocumentTitle from "../../hooks/useDocumentTitle";
 
 const Home = () => {

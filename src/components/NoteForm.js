@@ -60,7 +60,6 @@ const NoteForm = ({ note, onSubmit }) => {
           <div className="form-control">
             <input onChange={onTitleChange} placeholder="Title" type="text" value={title} />
           </div>
-
           <div className="form-control">
             <div className="textarea-wrapper">
               <textarea

@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react";
 import Icon from "react-eva-icons";
 import { Link, withRouter } from "react-router-dom";
-import { history } from "../App";
 import { useDispatch } from "react-redux";
+
+import { history } from "../App";
 import { deleteAllNote } from "../redux/actions/noteActions";
 import Modal from "./Modal";
 
@@ -69,6 +70,4 @@ const Navigation = () => {
   );
 };
 
-//
-//
 export default withRouter(Navigation);
